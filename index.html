@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <script defer src='./src/scripts/test_CitiesList_Kochetkov.js'></script>
+  <script defer src='./src/scripts/script.js'></script>
+</head>
+
+<body>
+  <div class="cities-form">
+    <form action="#" class='cities-form__form'>
+      <fieldset>
+        <label for="cities">Cities:</label>
+        <input class="cities-form__input" list="cities" name="cities" autofocus placeholder="Example input: Nashville" required type="text"/>
+        <datalist class="input__data-list data-list" id="cities">
+          <!-- <option class="data-list__option-item" data-value="0" value="Cities"> -->
+        </datalist>
+        <hr>
+        <div class='button'>
+          <a href="#" class="btn btn-submit btn--disable">Enter</a>
+          <a href="#" class="btn btn-clear">Clear storage</a>
+      </div>       
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+:root {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Roboto, sans-serif;
+  src: url('../font/Roboto.ttf') format('truetype');
+}
+
+.button {
+  display: inline-block;
+}
+
+.btn {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #ffaa22;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  pointer-events: auto;
+}
+
+.btn-submit {
+  -moz-box-shadow: inset 0px 1px 0px 0px #fff6af;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #fff6af;
+  box-shadow: inset 0px 1px 0px 0px #fff6af;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+  background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+  background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+  background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+  background: -ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23', GradientType=0);
+  background-color: #ffec64;
+  text-shadow: 0px 1px 0px #ffee66;
+  pointer-events: auto;
+}
+
+.btn-submit:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+  background: -moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+  background: -webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+  background: -o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+  background: -ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64', GradientType=0);
+  background-color: #ffab23;
+}
+
+.btn-clear {
+  position: relative;
+  left: 75%;
+  background: linear-gradient(to bottom, #f5efc3 5%, #dfa549 100%);
+}
+
+.btn-clear:hover {
+  background-color: #ddbba8;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.cities-form__input {
+  border: 2px solid orange;
+  outline: none;
+  border-radius: 10px 10px 10px 10px;
+  font: 300 16px/1.25 "Helvetica Neue", sans-serif;
+  padding: 5px;
+  height: 35px;
+  width: 350px;
+  background: rgb(218, 209, 209);
+}
+
+.cities-form__input:hover{
+  background: rgb(224, 219, 219);
+}
+
+.invalid:not(:focus) {
+  background: rgba(255, 79, 79, 0.363);
+  border-color: rgba(221, 44, 44, 0.322);
+}
+
+.cities-form__input:after {
+    content: url(https://img.icons8.com/carbon-copy/2x/sort-down.png);
+    margin-left: -20px; 
+    padding: .1em;
+    pointer-events:none;
+}
+
+.btn--disable {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKrVq36zwjjgzhhYWGMYAEYB8RmROaABADeOQ8CXl/xfgAAAABJRU5ErkJggg==) repeat;
+  pointer-events:none;
+}
+
+fieldset {
+  background: whitesmoke;
+  padding: 1.5em;
+  max-width: 400px;
+  width: 100%;
+  outline: 3px solid rgba(0, 0, 0, 0.25);
+}
+
+label {
+  margin-right: 3%;
+  text-align: left;
+  display: inline-block;
+  width: 35%;
+}
